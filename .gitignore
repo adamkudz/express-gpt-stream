@@ -1,0 +1,7 @@
+node_modules
+thunder-tests
+blog
+*.code-workspace
+.env
+gptMiddleware
+```
