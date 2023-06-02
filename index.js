@@ -9,13 +9,6 @@ const port = 3000;
 
 app.use(express.json()); // for the body of the request
 
-const configuration = new Configuration({
-    organization: "org-o3G5e4ziOaVOXVDnPgu5iFOc",
-    apiKey: process.env.OPENAI_API_KEY,
-});
-
-const openai = new OpenAIApi(configuration);
-
 app.post("/chatapi", async (req, res) => {
     try {
         const response = await fetch(
